@@ -1,0 +1,87 @@
+/* vh viewport height-> relative to 1% of the height of viewport */
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-color: #201E21; 
+    color: #E0AA6E; 
+    font-family: cursive;
+    font-size: 16px;
+}
+
+h1,p{
+    margin: 1em auto;
+    text-align: center;
+}
+
+form {
+   width: 60vw;
+   max-width: 500px;
+   min-width: 300px;
+   margin: 0 auto;
+   padding-bottom: 2em;
+}
+
+fieldset {
+    border: none;
+    padding: 2rem 0;
+    border-bottom: 3px solid #E0AA6E; 
+}
+
+fieldset:last-of-type {
+    border-bottom: none;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0; /*rem relevamt to html element font size*/
+}
+
+input,
+textarea,
+select {
+    margin: 10px 0 0 0; /*only top is 10 then right&left 0 then bottom 0*/
+    width: 100%; /*take up the full width of their parent elements.*/
+    /*color: #ffffff; /*text color*/
+    min-height: 2em;
+}
+
+/* blending them with background color*/
+input, textarea{
+    background-color: #332f36; 
+    border: 1px solid #332f36; 
+    color: #DDC2A5;  
+}
+
+/* class */
+.inline {
+    width: unset; /* remove earlier rule which set all input epments to width 100% */
+    margin: 0 0.5em 0 0; /*top right&left bottom*/
+    /*
+    margin-right: 0.5em;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    */
+    vertical-align: middle;
+}
+
+input[type="submit"]{
+    display: block;
+    width: 60%;
+    margin: 1em auto; /* top & bottom 1 auto left & right , seperate from fieldset*/
+    /*margin: 0 auto; center submit bottom*/
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #3b3b4f;
+    border-color: #E0AA6E; 
+    min-width: 300px;
+}
+
+input[type="file"]{
+    padding: 1px 2px; 
+}
+
+a{
+    color: #dfdfe2;
+}
